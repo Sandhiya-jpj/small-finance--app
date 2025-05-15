@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import psycopg2
@@ -51,6 +52,8 @@ def add_loan():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+=======
+>>>>>>> 6edfe47bd2c7ce28afe14b207b8bcf4215c61dc9
 import os
 from flask import Flask
 
@@ -61,5 +64,10 @@ def home():
     return "Backend is running!"
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     port = int(os.environ.get("PORT", 5000))  # Default to 5000
     app.run(host="0.0.0.0", port=port)
+=======
+    port = int(os.environ.get("PORT", 5000))  # Render sets this env variable
+    app.run(host="0.0.0.0", port=port)        # Bind to all interfaces
+>>>>>>> 6edfe47bd2c7ce28afe14b207b8bcf4215c61dc9
